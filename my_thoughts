@@ -1,0 +1,4 @@
+trex-v1 trained on whole canvas and full size image of brower in dragon also in image so it is not succeful.
+trex-v2 trained on whole canvas and full size image but i cut dragon from image only dragon cut but it perform not that good
+trex-v3 trainded on resize image (100,50) and cut image into nearly half on small batch and less epoch it work quit well in compare to other.
+trex-v4 trainded on resize image (100,50) and cut image into nearly half on batch size 100 and 50 epoch it work fantastic but one problem it jump early i add time.sleep to jump later but it not good some place it goes late to jump , i think this happen because of resizing of image.
