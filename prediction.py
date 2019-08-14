@@ -8,7 +8,7 @@ from selenium import webdriver
 import numpy as np
 from keras.preprocessing import image
 import cv2
-model = load_model("trex-v8.h5")
+model = load_model("model\\trex-v8.h5")
 driver = webdriver.Chrome()
 
 

@@ -37,4 +37,4 @@ model.compile(optimizer=optimizer,loss="binary_crossentropy",metrics=["accuracy"
 train_image_gen = img_gen.flow_from_directory("data_resize",target_size=(img.shape[0], img.shape[1]),batch_size= 160,shuffle=True,color_mode="grayscale" )
 print(train_image_gen.class_indices)
 results = model.fit_generator(train_image_gen,epochs=25,steps_per_epoch=25)
-model.save("trex-v8.h5")
+model.save("model\\trex-v8.h5")
