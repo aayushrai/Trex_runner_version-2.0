@@ -12,8 +12,8 @@ for folder in os.listdir("data\\"):
         if not os.path.exists("data_resize\\"+folder+"\\"+file):
                 print(file)
                 img = cv2.imread("data\\"+folder+"\\"+file)
-                img = img[:,:280] # half image on axis = 1
-                img = cv2.resize(img,(150,50))
+                img = img[:,:250] # half image on axis = 1
+                img = cv2.resize(img,(75,50))
                 cv2.imwrite("data_resize\\"+folder+"\\"+file,img)
 
 
